@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Content Generator (Gemini API)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>✨ AI Content Generator</h1>
+    <p class="subtitle">Powered by Google Gemini</p>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('ask')">Ask Anything</button>
+      <button class="tab-btn" onclick="switchTab('summarize')">Summarizer</button>
+      <button class="tab-btn" onclick="switchTab('ideas')">Idea Spark</button>
+    </div>
+
+    <!-- Feature 1: Ask Anything -->
+    <div id="ask" class="tab-content active">
+      <h2>Ask Me Anything ❓</h2> <br>
+      <input type="text" id="askInput" placeholder="Sawaal pucho (e.g. What is JavaScript?)...">
+      <button id="askBtn">Get Answer</button>
+      <div id="askOutput" class="output-box"></div>
+    </div>
+
+    <!-- Feature 2: Quick Summarizer -->
+    <div id="summarize" class="tab-content">
+      <h2>Quick Summarizer 📝</h2> <br>
+      <textarea id="summaryInput" placeholder="Lamba text yahan paste karein..."></textarea>
+      <button id="summarizeBtn">Summarize Text</button>
+      <div id="summaryOutput" class="output-box"></div>
+    </div>
+
+    <!-- Feature 3: Idea Spark -->
+    <div id="ideas" class="tab-content">
+      <h2>Idea Spark 💡</h2> <br>
+      <input type="text" id="ideaInput" placeholder="Topic likhein (e.g. YouTube Video Ideas)...">
+      <button id="ideaBtn">Generate Ideas</button>
+      <div id="ideaOutput" class="output-box"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

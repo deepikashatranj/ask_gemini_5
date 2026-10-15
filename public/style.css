@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    /* Dynamic Background Image & Color Fallback */
+    /* background-color: #0f172a; */
+    background-image: url('https://images.unsplash.com/photo-1678247539441-05ad26a18343?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Glassmorphism Container */
+  .container {
+     /* Semi-transparent dark slate */
+    backdrop-filter: blur(12px); /* Background image blur effect */
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    border: 1px solid grey;
+    min-height: 550px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white; /* Vibrant Cyan Header */
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  
+  h2 {
+    color: white;
+  }
+  
+  
+  .subtitle {
+    text-align: center;
+    color: #bccef0;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  
+  /* Tab Navigation */
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    background: rgba(9, 13, 22, 0.6);
+    padding: 6px;
+    border-radius: 10px;
+  }
+  
+  .tab-btn {
+    flex: 1;
+    padding: 12px;
+    background: #1e293b;
+    color: #94a3b8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn:hover {
+    color: #ffffff;
+    background: #334155;
+  }
+  
+  .tab-btn.active {
+    background: #6366f1; /* Electric Indigo Accent */
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  /* Input Fields */
+  input, textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    background:  #090d16; /* Deep Dark Navy */
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 18px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  }
+  
+  textarea {
+    height: 110px;
+    resize: none;
+  }
+  
+  /* Primary Action Buttons */
+  button[id$="Btn"] {
+    width: 100%;
+    padding: 14px;
+    background: #6366f1; /* Electric Indigo */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  }
+  
+  button[id$="Btn"]:hover {
+    background: #4f46e5;
+    transform: translateY(-1px);
+  }
+  
+  /* Output Box */
+  .output-box {
+    margin-top: 20px;
+    padding: 16px;
+    background: #090d16;
+    border-radius: 10px;
+    color: #e2e8f0;
+    min-height: 60px;
+    line-height: 1.6;
+    max-height: 220px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    border: 2px solid rgba(255,255,255,0.2);
+  }
+  
+  /* Custom Scrollbar for Output Box */
+  .output-box::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .output-box::-webkit-scrollbar-track {
+    background: #090d16;
+  }
+  
+  .output-box::-webkit-scrollbar-thumb {
+    background: #3341;
+    border-radius: 4px;
+  }
+
+  
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+      min-height: auto;
+    }
+    .tabs {
+      flex-direction: column;
+    }
+  }
